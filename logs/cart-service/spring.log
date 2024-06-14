@@ -177,3 +177,24 @@
 00:34:29:135 DEBUG 16344 --- [http-nio-8082-exec-1] com.hmall.api.client.ItemClient          : [ItemClient#queryItemByIds] <--- END HTTP (371-byte body)
 00:34:29:243  INFO 16344 --- [nacos-grpc-client-executor-12] com.alibaba.nacos.common.remote.client   : [03efce03-3214-4b54-b33d-a696e9dbe6d4] Receive server push request, request = NotifySubscriberRequest, requestId = 44
 00:34:29:244  INFO 16344 --- [nacos-grpc-client-executor-12] com.alibaba.nacos.common.remote.client   : [03efce03-3214-4b54-b33d-a696e9dbe6d4] Ack server push request, request = NotifySubscriberRequest, requestId = 44
+00:41:36:568  INFO 16344 --- [nacos-grpc-client-executor-101] com.alibaba.nacos.common.remote.client   : [03efce03-3214-4b54-b33d-a696e9dbe6d4] Receive server push request, request = NotifySubscriberRequest, requestId = 45
+00:41:36:576  INFO 16344 --- [nacos-grpc-client-executor-101] com.alibaba.nacos.common.remote.client   : [03efce03-3214-4b54-b33d-a696e9dbe6d4] Ack server push request, request = NotifySubscriberRequest, requestId = 45
+00:41:37:327  INFO 16344 --- [nacos-grpc-client-executor-102] com.alibaba.nacos.common.remote.client   : [03efce03-3214-4b54-b33d-a696e9dbe6d4] Receive server push request, request = NotifySubscriberRequest, requestId = 47
+00:41:37:333  INFO 16344 --- [nacos-grpc-client-executor-102] com.alibaba.nacos.common.remote.client   : [03efce03-3214-4b54-b33d-a696e9dbe6d4] Ack server push request, request = NotifySubscriberRequest, requestId = 47
+00:41:38:188  INFO 16344 --- [nacos-grpc-client-executor-103] com.alibaba.nacos.common.remote.client   : [03efce03-3214-4b54-b33d-a696e9dbe6d4] Receive server push request, request = NotifySubscriberRequest, requestId = 49
+00:41:38:194  INFO 16344 --- [nacos-grpc-client-executor-103] com.alibaba.nacos.common.remote.client   : [03efce03-3214-4b54-b33d-a696e9dbe6d4] Ack server push request, request = NotifySubscriberRequest, requestId = 49
+00:41:39:714  INFO 16344 --- [nacos-grpc-client-executor-104] com.alibaba.nacos.common.remote.client   : [03efce03-3214-4b54-b33d-a696e9dbe6d4] Receive server push request, request = NotifySubscriberRequest, requestId = 52
+00:41:39:722  INFO 16344 --- [nacos-grpc-client-executor-104] com.alibaba.nacos.common.remote.client   : [03efce03-3214-4b54-b33d-a696e9dbe6d4] Ack server push request, request = NotifySubscriberRequest, requestId = 52
+00:48:10:601  WARN 16344 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+00:48:10:602  WARN 16344 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+00:48:10:602  WARN 16344 --- [Thread-4] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+00:48:10:602  WARN 16344 --- [Thread-7] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+00:48:10:650  INFO 16344 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+00:48:10:655  INFO 16344 --- [SpringApplicationShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+00:48:10:975  INFO 16344 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown rpc client, set status to shutdown
+00:48:10:975  INFO 16344 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Shutdown client event executor java.util.concurrent.ScheduledThreadPoolExecutor@2bc4ee92[Running, pool size = 2, active threads = 2, queued tasks = 0, completed tasks = 0]
+00:48:10:976  INFO 16344 --- [SpringApplicationShutdownHook] com.alibaba.nacos.common.remote.client   : Close current connection 1718292432381_192.168.121.1_12912
+00:48:10:978  INFO 16344 --- [nacos-grpc-client-executor-185] c.a.n.c.remote.client.grpc.GrpcClient    : [1718292432381_192.168.121.1_12912]Ignore complete event,isRunning:false,isAbandon=false
+00:48:10:988  INFO 16344 --- [SpringApplicationShutdownHook] c.a.n.c.remote.client.grpc.GrpcClient    : Shutdown grpc executor java.util.concurrent.ThreadPoolExecutor@187db3a6[Running, pool size = 5, active threads = 0, queued tasks = 0, completed tasks = 186]
+00:48:10:992  INFO 16344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+00:48:11:008  INFO 16344 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
